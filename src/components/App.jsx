@@ -5,6 +5,7 @@ import emojipedia from "../emojipedia";
 function createEnrty(emojilist) {
   return (
     <Entry
+      key={emojilist.id}
       emoji={emojilist.emoji}
       name={emojilist.name}
       meaning={emojilist.meaning}
@@ -13,7 +14,6 @@ function createEnrty(emojilist) {
 }
 
 function App() {
-  console.log(emojipedia);
   return (
     <div>
       <h1>

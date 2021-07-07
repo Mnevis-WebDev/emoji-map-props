@@ -1,7 +1,6 @@
 import React from "react";
 
 function Entry(props) {
-  console.log(props);
   return (
     <dl className="dictionary">
       <div className="term">
