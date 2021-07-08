@@ -19,7 +19,15 @@ function App() {
       <h1>
         <span>emojipedia</span>
       </h1>
-      {emojipedia.map(createEnrty)}
+      {/*  {emojipedia.map(createEnrty)} */}
+      {emojipedia.map((emojilist) => (
+        <Entry
+          key={emojilist.id}
+          emoji={emojilist.emoji}
+          name={emojilist.name}
+          meaning={emojilist.meaning}
+        />
+      ))}
     </div>
   );
 }
